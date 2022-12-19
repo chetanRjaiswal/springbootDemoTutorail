@@ -1,0 +1,41 @@
+#spring:
+#  profiles:
+#    active: dev
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    url: jdbc:mysql://localhost:3306/student_local_db
+#    password: root
+#  jpa:
+#    show-sql: 'true'
+#    hibernate:
+#      ddl-auto: update
+---
+
+spring:
+  profiles:
+    active: qa
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/student_local_qa_db
+    password: root
+  jpa:
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+
+---
+
+#spring:
+#  profiles:
+#    active: prod
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    url: jdbc:mysql://localhost:3306/student_local_prod_db
+#    password: root
+#  jpa:
+#    show-sql: 'true'
+#    hibernate:
+#      ddl-auto: update
